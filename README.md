@@ -30,10 +30,11 @@ Here are some of my constraints and decisions:
   - Token embeddings, transformers, attention, causal masking, KV-cache, and MoE.
   - Don't worry if these words mean nothing yet - the analogies will take care of that!
 - I could have asked my favourite chat assistant:
-    - _"Explain to a 10-year-old child how large language models generate the next words"_.
+    - _"Explain to a 10-year-old child how large language models (LLMs) generate the next words"_.
     - But I did not.
     - Instead, I would like to present an analogy I developed recently, while reading about the topic.
-    - Disclaimer: some analogies using the word `"apple"` are inspired by [videos](https://www.youtube.com/watch?v=OxCpWwDCDFQ) of Luis Serrano.
+    - Disclaimer 1: I used LLMs for grammatical correction of my final version and for subtitle suggestions.
+    - Disclaimer 2: some analogies using the word `"apple"` are inspired by [videos](https://www.youtube.com/watch?v=OxCpWwDCDFQ) of Luis Serrano.
 - I also could have generated some figures to illustrate the text.
     - But I did not.
     - I would prefer the reader or listener to imagine the scenes themselves, and create their own representations.
@@ -416,15 +417,35 @@ suddenly becomes the star of the finale!
 
 ---
 
-## The Suspense Reaches Its Peak
+## Inverting the Mapping
 
-The show producer provides a converter during prime time.  
+At the beginning of the month,  
+each word has been converted to 4,000 numbers,  
+using a table.
+
+Now, after one month, the 4,000 numbers of the newcomer  
+must be inverted back to one word.  
+
+> "What word does it represent?"
+
+There is no simple table for that operation.
+
+One could compute the distance  
+for the description of each of the 100,000 words in the dictionary  
+to the newcomer's 4,000 numbers.  
+And pick the word with the smallest distance.
+
+Instead, during prime time, the show producer discloses a converter.  
 It is a machine that takes 4,000 numbers as input.  
 And outputs exactly 100,000 probabilities.  
 The circle is complete!
 
 Remember, these 100,000 probabilities say, for each word in the dictionary,  
 how likely it is to be selected as the next word.
+
+---
+
+## The Suspense Reaches Its Peak
 
 The lastly arrived participant provides its 4,000 numbers.  
 They are passed through the machine.  
@@ -564,3 +585,4 @@ And how **computationally intensive** it is to produce one next word.
 - The positional encoding.
 - The training phase.
 - The chat structure with special tokens.
+- Distinction Prefill vs Decode
