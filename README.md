@@ -390,7 +390,7 @@ to the participant's 4,000 numbers.
 
 ---
 
-## Daytime Drama, Night-time Consulting
+## Day-time Drama, Night-time Consulting
 
 During the day meetings, things work exactly as before.  
 **Experts only affect the night-time reflections**.
@@ -420,28 +420,79 @@ suddenly becomes the star of the finale!
 ## Inverting the Mapping
 
 At the beginning of the month,  
-each word has been converted to 4,000 numbers,  
-using a table.
+every word was turned into 4,000 numbers  
+using a big lookup table.
 
-Now, after one month, the 4,000 numbers of the newcomer  
-must be inverted back to one word.  
+Now, the newcomer's 4,000 numbers must be **converted back  
+into one single word**.
 
-> "What word does it represent?"
+But here is the complication:  
+There is no simple lookup table that reverses the process.
 
-There is no simple table for that operation.
+> "Do these 4,000 numbers still represent the newcomer's original word?"
 
-One could compute the distance  
-for the description of each of the 100,000 words in the dictionary  
-to the newcomer's 4,000 numbers.  
-And pick the word with the smallest distance.
+Only partly:
+- True, they still carry traces of the newcomer's identity,
+- Yet they also **encode the influence of all earlier participants**.
 
-Instead, during prime time, the show producer discloses a converter.  
-It is a machine that takes 4,000 numbers as input.  
-And outputs exactly 100,000 probabilities.  
-The circle is complete!
+After all the day-time meetings and night-time expert sessions,  
+the 4,000 numbers now represent something richer:
+- A refined representation of the newcomer,
+- Informed by the entire sentence that preceded it.
 
-Remember, these 100,000 probabilities say, for each word in the dictionary,  
-how likely it is to be selected as the next word.
+These 4,000 numbers have become **a summary of the sentence**.  
+And this context-rich summary is precisely what the show relies on  
+to predict which word should come next.
+
+> "How can these 4,000 numbers be turned into a word?"
+
+---
+
+## Why Comparison Fails
+
+One very naive method would be:
+- Compare the newcomer's final 4,000 numbers  
+  to the 4,000-number description of all 100,000 dictionary words.
+- Find the closest one.
+- Declare it as the next word.
+
+However, there is a fundamental issue:  
+**Those final 4,000 numbers no longer mean  
+what the original dictionary descriptions mean.**
+
+In the dictionary descriptions:
+- The first number might relate to "fruitiness".
+- The second to "technology-ness".
+- And so on for 4,000 of abstract characteristics.
+
+But after a month of day-time meetings and night-time expert sessions,  
+the newcomer's 4,000 numbers have been completely reshaped.  
+So even though they share the same length,  
+**they no longer live in the same conceptual space**.  
+
+A different mechanism is required.
+
+---
+
+## The Converter
+
+In prime time, the producer reveals a special machine:  
+**the converter**.
+
+It takes 4,000 numbers as input.  
+And produces exactly 100,000 probabilities:  
+one for each word in the dictionary.
+
+The loop is closed:
+- At the start of the month,  
+**words became numbers using a lookup table**.
+- At the end of the month,  
+**numbers become word-probabilities using the converter**.
+
+Those probabilities tell the show,  
+for every possible dictionary entry,  
+how likely it is to be the next word in the sentence.  
+The highest one wins.
 
 ---
 
@@ -450,7 +501,9 @@ how likely it is to be selected as the next word.
 The lastly arrived participant provides its 4,000 numbers.  
 They are passed through the machine.  
 The audience is eager to see the results.  
-A short advertisement break happens.  
+
+A short advertisement break happens.
+
 Then the results are revealed.  
 From the returned 100,000 probabilities,  
 **the word with the highest probability is selected**.
