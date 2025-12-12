@@ -109,12 +109,13 @@ Now comes the 6th participant, after 6 months, representing `"a"`.
 All together, they need to decide the next word.  
 And they have exactly one month to do so.
 
-The month start with the same protocol as in the previous months:  
-**Each participant receives 4,000 numbers**.  
+The month starts with the same protocol as in the previous months:  
+**Each participant receives 4,000 decimal numbers**.  
 Let's call it their "description".
 
 These numbers are important:  
-The participants should take care of them, every day, until the end of the month.
+The participants should adjust them, every day, until the end of the month.  
+More on that later.
 
 ---
 
@@ -128,7 +129,7 @@ They are like identifiers:
 - `"apple"` is identified by the ID #100.
 - `"zoo"` by ID #99,900.
 
-There exists a **mapping from these identifiers to the 4,000-long descriptions**.  
+There exists a **one-to-one mapping from these identifiers to the 4,000-long descriptions**.  
 Imagine a table with 100,000 rows and 4,000 columns.  
 The 100th row is the one for `"apple"`.  
 It has 4,000 decimal numbers associated with it:  
