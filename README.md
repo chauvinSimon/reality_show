@@ -188,7 +188,7 @@ Following this rule:
 - Labels like `"smartphone"` and `"laptop"` will lie in the diagonally opposite corner (back-left).
 
 One could thus say that **the words `"blueberry"` and `"smartphone"` are  
-far away from one another on the table.
+far away from one another on the table.**
 
 Note that the table plane has only 2 dimensions here, representing:
 - Fruitiness,
