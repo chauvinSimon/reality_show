@@ -294,7 +294,7 @@ In total, there are 6 × 6 = 36 meetings.
 Yes, each participant even meets themselves!
 
 When the participant representing `"apple"` listens to the one representing "eat",  
-then they adjust their 4,000 numbers.  
+participant `"apple"` adjusts its 4,000 numbers.  
 The description moves in the huge 4,000-dimensional space.  
 It gets closer to words representing fruits and food.  
 And gets pushed away from words about tech.  
